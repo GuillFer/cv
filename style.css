@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+  font-family:helvetica;
+}
+
+html, body {
+  background: linear-gradient(180deg, white 0%, #efefef 100%);
+}
+
+body {
+  width:100vw;
+  margin:auto;
+}
+
+header, main {
+  width:100%;
+  margin:12px 0 48px;
+  display:grid;
+}
+
+main {
+  grid-template-columns: 30% 70%;
+}
+
+h1, h2, h3 {
+  text-align:center;
+  margin:0.5rem 0 1rem;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+h5 {
+    color:#376996;
+}
+
+h6 {
+  font-weight:bold;
+  margin:1rem 0 0.5rem;
+}
+
+p {
+  margin-bottom:0.25rem;
+}
+
+i {
+  margin-right:16px;
+}
+
+/* LEFT */
+
+.left {
+  background-color:#0B5563;
+  color:whitesmoke;
+  padding: 0 24px 12px;
+  border-radius:4px;
+}
+
+
+.dev-icons {
+  list-style-type: none;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+}
+
+.dev-icons li {
+  display:inline-block;
+  font-size:2.5rem;
+}
+
+/* RIGHT */
+
+.right {
+  padding: 0 24px 12px;
+}
+
+h3:not(:first-of-type) {
+  margin-top:2rem;
+  padding:0.75rem 0;
+}
+
+h3:first-child {
+  padding:0.75rem;
+  margin-top:0;
+}
+
+.right h3 {
+  background-color:#1F487E;
+  color:white;
+  border-radius:4px;
+}
+
+.block-right {
+  display:grid;
+  grid-template-columns: 16% 84%;
+  margin-bottom:12px;
+}
+
+.block-right > div:nth-child(1) {
+  align-self:center;
+  padding: 8px 16px;
+}
+
+.block-right > div:nth-child(2) {
+  background-color:#E3DEE3;
+  padding: 8px 16px;
+}
+
+.formation {
+  position:relative;
+}
+
+.lieu {
+  position:absolute;
+  top:8px;
+  right:16px;
+  font-size:0.875rem;
+  max-width:33%;
+}
+
+
+@media (max-width: 950px) {
+
+  main {
+    grid-template-columns: 100%;
+    grid-template-areas :
+      "left-block"
+      "right-block";
+  }
+
+  .left {
+    grid-area:left-block;
+    margin-bottom:2rem;
+    display:grid;
+    grid-template-columns:50% 50%;
+  }
+
+  .left > div {
+    padding:8px;
+  }
+
+  .right {
+    grid-area:right-block;
+    padding:0;
+  }
+
+
+}
+
+@media (max-width: 500px) {
+
+  .left {
+    grid-template-columns: 100%;
+  }
+
+  .block-right {
+  display:grid;
+  grid-template-columns:100%;
+  grid-template-rows:auto;
+  }
+
+  .block-right > div:first-child {
+    font-weight:bold;
+    font-size:1.125rem;
+  }
+}
