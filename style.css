@@ -134,6 +134,11 @@ h3:first-child {
   word-wrap:wrap;
 }
 
+.address {
+  display:flex;
+  align-items:center;
+}
+
 
 @media (max-width: 950px) {
 
