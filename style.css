@@ -48,6 +48,8 @@ p {
 
 i {
   margin-right:16px;
+  width:16px;
+  height:16px;
 }
 
 /* LEFT */
@@ -57,6 +59,15 @@ i {
   color:whitesmoke;
   padding: 0 24px 12px;
   border-radius:4px;
+}
+
+.email {
+  font-size:0.875rem;
+}
+
+.address {
+  display:flex;
+  align-items:center;
 }
 
 
@@ -119,7 +130,8 @@ h3:first-child {
   top:8px;
   right:16px;
   font-size:0.875rem;
-  max-width:33%;
+  max-width:40%;
+  word-wrap:wrap;
 }
 
 
