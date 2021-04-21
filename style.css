@@ -147,6 +147,10 @@ h3:first-child {
   align-items:center;
 }
 
+#s26 {
+  page-break-after:always;
+}
+
 
 @media (max-width: 950px) {
 
@@ -162,6 +166,10 @@ h3:first-child {
     margin-bottom:2rem;
     display:grid;
     grid-template-columns:50% 50%;
+  }
+
+  .left > div:not(:first-of-type) {
+  margin-top:0;
   }
 
   .left > div {
