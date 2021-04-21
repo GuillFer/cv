@@ -209,7 +209,15 @@ h3:first-child {
 }
 
 @media print {
+  body {
+    background-color:transparent;
+  }
+
   .print {
     display:block;
+  }
+
+  #s26 {
+    margin-bottom:0;
   }
 }
