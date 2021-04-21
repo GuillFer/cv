@@ -39,7 +39,7 @@ h5 {
 
 h6 {
   font-weight:bold;
-  margin:1.75rem 0 0.5rem;
+  margin:0.5rem 0;
 }
 
 p {
@@ -109,10 +109,14 @@ h3:first-child {
   border-radius:4px;
 }
 
-.block-right {
+.block-right:not(.perso) {
   display:grid;
   grid-template-columns: 16% 84%;
   margin-bottom:12px;
+}
+
+.block-right.perso {
+  margin-left:16%;
 }
 
 .block-right > div:nth-child(1) {
@@ -180,8 +184,8 @@ h3:first-child {
 
   .block-right {
   display:grid;
-  grid-template-columns:100%;
-  grid-template-rows:auto;
+  grid-template-columns:100%!important;
+  grid-template-rows:auto!important;
   }
 
   .block-right > div:first-child {
