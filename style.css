@@ -147,9 +147,15 @@ h3:first-child {
   align-items:center;
 }
 
+.print {
+  display:none;
+  margin-top:2rem;
+}
+
 #s26 {
   page-break-after:always;
 }
+
 
 
 @media (max-width: 950px) {
@@ -199,5 +205,11 @@ h3:first-child {
   .block-right > div:first-child {
     font-weight:bold;
     font-size:1.125rem;
+  }
+}
+
+@media print {
+  .print {
+    display:block;
   }
 }
