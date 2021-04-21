@@ -39,7 +39,7 @@ h5 {
 
 h6 {
   font-weight:bold;
-  margin:1rem 0 0.5rem;
+  margin:1.75rem 0 0.5rem;
 }
 
 p {
@@ -59,6 +59,10 @@ i {
   color:whitesmoke;
   padding: 0 24px 12px;
   border-radius:4px;
+}
+
+.left > div:not(:first-of-type) {
+  margin-top:1.5rem;
 }
 
 .email {
@@ -113,12 +117,12 @@ h3:first-child {
 
 .block-right > div:nth-child(1) {
   align-self:center;
-  padding: 8px 16px;
+  padding: 16px;
 }
 
 .block-right > div:nth-child(2) {
   background-color:#E3DEE3;
-  padding: 8px 16px;
+  padding: 16px;
 }
 
 .formation {
