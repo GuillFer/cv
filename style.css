@@ -87,6 +87,10 @@ i {
   font-size:2.5rem;
 }
 
+.tools li {
+  font-size:3rem;
+}
+
 /* RIGHT */
 
 .right {
@@ -127,6 +131,12 @@ h3:first-child {
 .block-right > div:nth-child(2) {
   background-color:#E3DEE3;
   padding: 16px;
+}
+
+p.tech {
+  text-align:center;
+  padding-top:2rem;
+  font-size:2.5rem;
 }
 
 .formation {
