@@ -24,7 +24,7 @@ main {
   grid-template-columns: 30% 70%;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   text-align:center;
   margin:0.5rem 0 1rem;
 }
@@ -33,7 +33,7 @@ h4:not(.dev) {
     font-weight: bold;
 }
 
-h5 {
+h5:not(.dev) {
     color:#376996;
 }
 
