@@ -162,8 +162,8 @@ p.tech {
   margin-top:2rem;
 }
 
-#s26 {
-  page-break-after:always;
+.left, #s26 {
+  break-after:page;
 }
 
 @media (max-width: 950px) {
